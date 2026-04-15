@@ -1,12 +1,12 @@
 // domain/.netlify/functions/1-hello
-exports.handler = async (event, context) => {
-  console.log(event);
-  console.log(context);
+export async function handler(event, context) {
+  console.log(event)
+  console.log(context)
   return {
     headers: {
-      "Access-Control-Allow-Origin": "*",
+      'Access-Control-Allow-Origin': '*',
     },
     statusCode: 200,
-    body: "Our First Netlify Function Example",
-  };
-};
+    body: 'Our First Netlify Function Example',
+  }
+}
